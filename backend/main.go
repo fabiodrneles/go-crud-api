@@ -139,7 +139,7 @@ func main() {
 	connectDB()
 	router := gin.Default()
 
-	// NOVO: Configuração do CORS
+	//Configuração do CORS
 	router.Use(cors.New(cors.Config{
 		AllowOrigins:     []string{"http://localhost:3000"}, // Permite o acesso do seu app React
 		AllowMethods:     []string{"GET", "POST", "PUT", "DELETE"},
